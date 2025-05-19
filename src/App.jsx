@@ -29,9 +29,7 @@ function App() {
         {filteredQuestions.length > 0 ? (
           filteredQuestions.map((q) => (
             <div key={q.id} className="question-card">
-              <h3>
-                {q.unit} - {q.theme}
-              </h3>
+              <h3>{q.theme}</h3>
               <div className="question-block">
                 <p className="question">
                   <strong style={{ color: "white" }}>Question:</strong>{" "}
