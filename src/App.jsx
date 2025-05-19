@@ -13,16 +13,24 @@ function App() {
 
   return (
     <div className="app">
-      <h3>English Questions & Answers</h3>
+      <div
+        style={{
+          position: "sticky",
+          top: "0",
+          left: "0",
+        }}
+      >
+        <h3>English Questions & Answers</h3>
 
-      <div className="search-container" style={{ width: "80%" }}>
-        <input
-          type="text"
-          placeholder="Search questions..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="search-input"
-        />
+        <div className="search-container" style={{ width: "80%" }}>
+          <input
+            type="text"
+            placeholder="Search questions..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="search-input"
+          />
+        </div>
       </div>
 
       <div className="questions-container">
